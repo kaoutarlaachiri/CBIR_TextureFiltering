@@ -55,15 +55,9 @@ def index():
             
             results = run_search(query_features)
             # results = searcher.gaborSearch(features)
-            '''RESULTS_LIST = list()
-            for (score, pathImage) in results:
-                RESULTS_LIST.append( {"image": 'static/images/'+str(pathImage), "score": str(score)})
-'''
+
             
 
-
-                
-            
 
             return render_template('index.html',query_path=uploaded_img_path, scores = results)
     else:
